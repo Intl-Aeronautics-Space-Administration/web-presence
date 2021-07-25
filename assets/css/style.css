@@ -1,0 +1,111 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(149,149,149,1) 100%);
+}
+
+.container {
+    height: 100%;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container > div {
+    height: 100%;
+    width: 100%;
+}
+
+/* header */
+
+.header {
+    padding: 4.5rem 0;
+}
+
+.header h1, .header p {
+    margin: 0;
+}
+
+.header h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.8rem;
+}
+
+.header p {
+    font-size: 1.15rem;
+}
+
+.button {
+    background-color: rgb(255, 166, 0);
+    padding: 12px 20px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(230, 149, 0);
+}
+
+/* nav */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 40px 0;
+    background-color: rgb(190, 124, 0);
+}
+
+.nav a {
+    padding: 5px 20px;
+    background-color: rgb(173, 173, 173);
+    color: black;
+    text-decoration: none;
+    border-right: 1px solid black;
+}
+
+.nav a:last-child {
+    border-right: none;
+}
+
+.nav a:hover {
+    background-color: rgb(156, 156, 156);
+}
+
+.nav a.active {
+    background-color: rgb(190, 124, 0);
+}
+
+/* content */
+
+.content {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.089);
+}
+
+.content h2 {
+    margin: 0 0 12px 0;
+}
+
+/* footer */
+
+.footer {
+    padding: 15px 0 0 0;
+}
+
+.footer p {
+    margin: 0;
+    color: rgb(31, 31, 31);
+}
+
+.footer a {
+    color: rgb(31, 31, 31);
+    text-decoration: underline;
+}
