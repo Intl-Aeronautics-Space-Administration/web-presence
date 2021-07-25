@@ -4,7 +4,7 @@
 
 html,body {
     margin: 0;
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(149,149,149,1) 100%);
@@ -59,7 +59,7 @@ html,body {
     display: flex;
     flex-direction: row;
     margin: 0 0 40px 0;
-    background-color: rgb(190, 124, 0);
+    background-color: rgb(255, 166, 0);
 }
 
 .nav a {
@@ -75,11 +75,11 @@ html,body {
 }
 
 .nav a:hover {
-    background-color: rgb(156, 156, 156);
+    background-color: rgb(121, 121, 121);
 }
 
 .nav a.active {
-    background-color: rgb(190, 124, 0);
+    background-color: rgb(255, 166, 0);
 }
 
 /* content */
@@ -97,7 +97,7 @@ html,body {
 /* footer */
 
 .footer {
-    padding: 15px 0 0 0;
+    padding: 20px 0;
 }
 
 .footer p {
@@ -108,4 +108,15 @@ html,body {
 .footer a {
     color: rgb(31, 31, 31);
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 650px) {
+    .nav {
+        flex-direction: column;
+        max-height: 200px;
+        overflow-y: scroll;
+    }
+    .nav a {
+        border-right: none;
+    }
 }
