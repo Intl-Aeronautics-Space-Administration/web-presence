@@ -10,6 +10,23 @@ html,body {
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(149,149,149,1) 100%);
 }
 
+.background {
+    position: fixed;
+    z-index: 0;
+    background-image: url('../img/backgrounds/space.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.foreground {
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+}
+
 .container {
     height: 100%;
     max-width: 72rem;
@@ -35,10 +52,12 @@ html,body {
 .header h1 {
     margin: 0 0 5px 0;
     font-size: 1.8rem;
+    color: white;
 }
 
 .header p {
     font-size: 1.15rem;
+    color: #ddd;
 }
 
 .button {
@@ -102,11 +121,11 @@ html,body {
 
 .footer p {
     margin: 0;
-    color: rgb(31, 31, 31);
+    color: #ddd;
 }
 
 .footer a {
-    color: rgb(31, 31, 31);
+    color: #ddd;
     text-decoration: underline;
 }
 
